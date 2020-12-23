@@ -1,8 +1,7 @@
-name: flutter_toast
+name: flutter_toast_viet
 description: A new Flutter plugin.
-version: 0.0.1
-author: VietVuong
-homepage:
+version: 0.0.2
+homepage: https://github.com/vietvuong1994/MyFlutterToast
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
