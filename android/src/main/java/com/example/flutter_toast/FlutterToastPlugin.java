@@ -13,8 +13,6 @@ import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
-import com.example.mytoast.MyToast;
 
 /** FlutterToastPlugin */
 public class FlutterToastPlugin implements FlutterPlugin, MethodCallHandler, ActivityAware {
@@ -53,6 +51,9 @@ public class FlutterToastPlugin implements FlutterPlugin, MethodCallHandler, Act
     else if(call.method.equals("showToast")){
       String msg = call.argument("msg").toString();
       MyToast.showToast(activity, msg);
+    }
+    else if(call.method.equals("showActivity")){
+      MyToast.showActivity(activity);
     }
     else {
       result.notImplemented();

@@ -17,4 +17,9 @@ class FlutterToast {
     await _channel.invokeMethod('showToast', args);
     return null;
   }
+
+  static Future<Null> showActivity() async {
+    await _channel.invokeMethod('showActivity');
+    return null;
+  }
 }

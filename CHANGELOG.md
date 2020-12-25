@@ -5,3 +5,7 @@
 ## 0.0.2
 
 * Fix some bug
+
+## 0.0.3
+
+* Update push activity
